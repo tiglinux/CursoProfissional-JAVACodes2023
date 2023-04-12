@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class ConjuntoBaguncado {
     public static void main (String [] args){
-        HashSet conjunto =  new HashSet();          //Hashset um Conjunto.
+        HashSet conjunto =  new HashSet();          //Hashset um Conjunto. HASHSET não aceita valores repetidos.
 
         conjunto.add(1.2);
         conjunto.add(true);

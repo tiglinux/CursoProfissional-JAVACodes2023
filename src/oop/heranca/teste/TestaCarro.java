@@ -21,7 +21,12 @@ public class TestaCarro {
         System.out.println(civic);
 
 
-        Carro ferrari = new Ferrari(400);
+        Ferrari ferrari = new Ferrari(400);
+        ferrari.ligarTurbo();
+        ferrari.ligarAr();
+        ferrari.desligarAr();
+
+        System.out.println(ferrari.velocidadeDoAr());
 
         ferrari.acelerar();
         System.out.println(ferrari);

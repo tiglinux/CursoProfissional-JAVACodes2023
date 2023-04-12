@@ -31,5 +31,14 @@ public class ConjuntoComportado {
         }
 
 
+        SortedSet<Integer> numSorteados = new TreeSet<Integer>();       //Organiza o número por ordem alfabética
+        numSorteados.add(30);
+        numSorteados.add(10);
+        numSorteados.add(20);
+
+        for(int num : numSorteados){
+            System.out.println(num);
+        }
+
     }
 }
