@@ -22,18 +22,19 @@ public class Desafio {
 
         Function<Double,Double> impostoMunicipal =
                 n1 -> n1 >= 2500 ? (n1-(n1 * 0.085)) : n1 ;
-        System.out.println("Imposto Municipal : R$"+ impostoMunicipal.apply(312.1));
+        System.out.println("Imposto Municipal : R$"+ impostoMunicipal.apply(p.preco));
 
         UnaryOperator<Double> frete =
                 (n1) -> n1 >= 3000 ? (n1 - 100) : (n1 - 50);
         System.out.println("Frete calculado : R$"+frete.apply(p.preco));
 
+        Function<Double,String> arrendondar =
+                (n1) ->String.format("%.2f",n1);
+        System.out.println("Arrendondado:"+arrendondar.apply(p.preco));
 
-
-
-
-
-
+        Function<Double,String> formatar =
+                preco -> ("R$" + preco).replace(".",",");
+        System.out.println("Formatado:"+formatar.apply(p.preco));
 
     }
 }
