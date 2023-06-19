@@ -1,0 +1,4 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æü•ó
+q	java:S116"\Rename this field "VELOCIDADE_MAXIMA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µíÕý
+N	java:S106#"9Replace this use of System.out or System.err by a logger.(áé™þ
